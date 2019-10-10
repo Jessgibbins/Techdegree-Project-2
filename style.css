@@ -1,13 +1,19 @@
+/* Typography */
+
+h1,
+h2,
+h3,
+p {
+    text-align: center;
+}
+
+
+
 /* Navagation Styles */
 
 nav {
     background-color: gray;
     margin: 0;
-}
-
-nav h1 {
-    text-align: center;
-    color: white;
 }
 
 nav ul {
@@ -30,10 +36,10 @@ nav li a {
 /* Header Styles */
 
 header {
-        width: 100%;
-        background: coral;
-        margin-left: auto;
-        margin-right: auto;
+    width: 100%;
+    background: coral;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 header p {
@@ -50,8 +56,14 @@ header p {
 
 /* Portfolio Section */
 
+.projects {
+    list-style-type: none;
+    padding: 5%;
+}
 
-
+.projects img {
+    width: 100%;
+}
 /* Contact Section */
 
 
