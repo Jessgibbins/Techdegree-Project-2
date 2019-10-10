@@ -12,20 +12,26 @@ p {
 /* Navagation Styles */
 
 nav {
-    background-color: gray;
+    margin: 0;
+    padding: 5%;
+    height: 100%;
+}
+
+nav h1 {
     margin: 0;
 }
 
 nav ul {
-    margin-right: 5%;
-    margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 0;
     list-style-type: none;
     padding: 0;
 }
 
 nav li {
-    border: 1px solid lightgray;
-    background: white;
+    margin: 5px;
+    padding: 5px;
+    background: rgba(211, 211, 211, 0.5);
     text-align: center;
 }
 
@@ -37,7 +43,7 @@ nav li a {
 
 header {
     width: 100%;
-    background: coral;
+    background: rgba(211, 211, 211, 0.5);
     margin-left: auto;
     margin-right: auto;
 }
@@ -49,11 +55,14 @@ header p {
 }
 
 .profile-img {
-    width: 50%;
-    margin-left: 25%;
+    width: 60%;
     margin-top: 10%;
+    margin-left: 20%;
 }
 
+body {
+    margin: 0;
+}
 /* Portfolio Section */
 
 .projects {
@@ -66,6 +75,35 @@ header p {
 }
 /* Contact Section */
 
+.contact {
+    background-color: lightgray;
+}
 
+.contact p {
+    margin: 0;
+    padding: 10px;
+}
+
+.contact h2 {
+    margin: 0;
+    padding: 10px;
+}
 
 /* Footer Styles */
+
+footer {
+    background-color: gray;
+}
+
+h4 {
+    margin: 0;
+    padding: 20px;
+}
+
+.footer-name {
+    float: left;
+}
+
+.scroll-up {
+    float: right;
+}
