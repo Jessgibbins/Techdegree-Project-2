@@ -1,3 +1,47 @@
 nav {
     background-color: gray;
+    margin: 0;
+}
+
+nav h1 {
+    text-align: center;
+    color: white;
+}
+
+nav ul {
+    margin-right: 5%;
+    margin-left: 5%;
+    list-style-type: none;
+    padding: 0;
+}
+
+nav li {
+    border: 1px solid lightgray;
+    background: white;
+    text-align: center;
+}
+
+nav li a {
+    text-decoration: none;
+}
+
+/* Header Styles */
+
+header {
+        width: 100%;
+        background: coral;
+        margin-left: auto;
+        margin-right: auto;
+}
+
+header p {
+    text-align: center;
+    padding: 5% 10% 5% 10%;
+    margin: 0;
+}
+
+.profile-img {
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 10%;
 }
