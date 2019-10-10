@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 /* Typography */
 
 h1,
@@ -107,3 +111,43 @@ h4 {
 .scroll-up {
     float: right;
 }
+
+/* Media Query for Tablets */
+
+@media (min-height: 768px) {
+    nav li {
+        display: inline-block;
+    }
+    .profile-img {
+        float: right;
+        margin: 0;
+        width: 40%;
+        padding: 20px;
+    }
+    header p {
+        float: left;
+        padding: 0;
+        width: 60%;
+        padding-left: 50px;
+        padding-top: 75px;
+        padding-right: 50px;
+    }
+    .portfolio h2 {
+        margin-top: 30px;
+    }
+    .projects {
+        padding-top: 0;
+        margin-top: 0;
+    }
+    .projects li {
+        float: left;
+        width: 40%;
+        margin: 5%;
+    }
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
