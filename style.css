@@ -151,3 +151,19 @@ h4 {
     clear: both;
     display: table;
   }
+
+  @media (min-width: 1024px) {
+      nav h1 {
+          float: left;
+      }
+      nav ul {
+          float: right;
+          margin: 0;
+      }
+      .projects{
+          padding: 0;
+      }
+      .projects li {
+          width: 23%;
+      }
+  }
