@@ -9,6 +9,7 @@ h2,
 h3,
 p {
     text-align: center;
+    font-family: "Lato";
 }
 
 /* Navagation Styles */
@@ -33,7 +34,7 @@ nav ul {
 nav li {
     margin: 5px;
     padding: 5px;
-    background: rgba(211, 211, 211, 0.5);
+    background: whitesmoke;
     text-align: center;
 }
 
@@ -45,7 +46,7 @@ nav li a {
 
 header {
     width: 100%;
-    background: rgba(211, 211, 211, 0.5);
+    background: whitesmoke;
     margin-left: auto;
     margin-right: auto;
 }
@@ -73,6 +74,10 @@ body {
     padding: 5%;
 }
 
+.projects li {
+    padding: 5%;
+}
+
 .projects img {
     width: 100%;
 }
@@ -80,7 +85,8 @@ body {
 /* Contact Section */
 
 .contact {
-    background-color: lightgray;
+    background-color: whitesmoke;
+    padding: 5%;
 }
 
 .contact p {
@@ -95,13 +101,9 @@ body {
 
 /* Footer Styles */
 
-footer {
-    background-color: gray;
-}
-
 h4 {
     margin: 0;
-    padding: 20px;
+    padding: 5%;
 }
 
 .footer-name {
@@ -110,6 +112,10 @@ h4 {
 
 .scroll-up {
     float: right;
+}
+
+.scroll-up a {
+    text-decoration: none;
 }
 
 .footer-nav {
@@ -123,6 +129,18 @@ h4 {
     display: inline-block;
 }
 
+/* Universal Styles */
+
+a:link,
+a:visited {
+    color: indianred;
+}
+
+a:hover,
+a:active {
+    color: lightcoral;
+}
+
 .clearfix::after {
     content: "";
     clear: both;
@@ -132,8 +150,16 @@ h4 {
 /* Media Query for Tablets */
 
 @media (min-width: 768px) {
+    nav{
+        border-width:1px 0;
+        list-style:none;
+        text-align:center;
+    }
     nav li {
         display: inline-block;
+        padding-left: 15px;
+        padding-right: 15px;
+        background: transparent;
     }
     .profile-img {
         float: right;
@@ -143,27 +169,25 @@ h4 {
     }
     header p {
         float: left;
-        padding: 0;
+        text-align: left;
+        font-size: 1.1em;
+        padding: 5%;
         width: 60%;
-        padding-left: 50px;
-        padding-top: 75px;
-        padding-right: 50px;
     }
     .portfolio h2 {
         margin-top: 30px;
     }
     .projects {
-        padding-top: 0;
-        margin-top: 0;
+        padding: 0;
+        margin: 5%;
     }
     .projects li {
         float: left;
-        width: 40%;
-        margin: 5%;
+        width: 50%;
     }
     .contact p {
-        margin-left: 30%;
-        margin-right: 30%;
+        margin-left: 15%;
+        margin-right: 15%;
     }
     .scroll-up {
         display: none;
@@ -172,7 +196,7 @@ h4 {
         visibility: visible;
         float: right;
         list-style-type: none;
-        padding: 20px;
+        padding: 5%;
     }
     .footer-nav li {
         display: inline-block;
@@ -195,8 +219,10 @@ h4 {
       }
       .projects{
           padding: 0;
+          margin: 5%;
       }
       .projects li {
-          width: 23%;
+          width: 33%;
+          padding: 2%;
       }
   }
